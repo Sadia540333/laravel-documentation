@@ -1,0 +1,121 @@
+body{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+/* -----editor start----- */
+.editor-container{
+  width: 900px;
+  height: 300px; 
+  padding: 70px;
+  position: relative;
+}
+
+#editor,
+#controller1,
+#controller2,
+#controller3,
+#controller4,
+#command1,
+#command2,
+#command3,
+#command4,
+#command5,
+#multhiauth,
+#command01,
+#command02{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 20px;
+}
+.ace_gutter-cell.ace_error {
+  background-image: none;
+}
+/* .ace_layer {
+  white-space: pre-line;
+ 
+}
+.ace_scrollbar-v {
+  overflow: hidden;
+} */
+
+/* -----editor end----- */
+
+
+/* ---Main Content Start--- */
+.scrool{
+    height: 100vh;
+    position: fixed;
+    width: 20%;
+    overflow-y: scroll;
+    padding-bottom: 100px;
+}
+/* ::-webkit-scrollbar{
+  width: 0;
+} */
+.nav-pills .nav-link{
+  border-bottom: 1px solid rgb(201, 198, 198);
+  color: rgb(51, 50, 51);
+}
+.nav-link:focus, .nav-link:hover {
+  color: rgb(51, 50, 51);
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color:#010101 ;
+  /* background-color: #fff; */
+  background-color: #f3f3f3;
+  width: 100%;
+}
+
+
+.nav-pills {
+  --bs-nav-pills-border-radius: none;
+}
+p{
+  text-align: justify;
+}
+h1,
+h2{
+  padding-top: 8px;
+}
+.code{
+  padding: 10px 25px;
+  border: 1px solid blue;
+  color: #fff;
+  background: #000000;
+  margin: 10px 0;
+}
+.images{
+  margin: 18px;
+  height: 400px;
+  width: 80%;
+}
+.images img{
+  height: 100%;
+  width: 100%;
+}
+
+.mvc-work ul li{
+  margin-bottom: 8px;
+}
+
+/* ---Main Content End--- */
+.all-file-folder p{
+  margin-left: 8px;
+}
+
+.code-heading p{
+  padding: 5px 12px;
+  border-left: 10px solid #d6d4d4;
+  border-right: 1px solid #d6d4d4;
+  border-top: 1px solid #d6d4d4;
+  border-bottom: 1px solid #d6d4d4;
+  border-radius: 5px;
+  color: #406592;
+  font-size: 14px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

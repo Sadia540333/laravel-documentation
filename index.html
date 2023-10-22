@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+  <body>
+
+<!--HEADER START-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+        <!-- <img style="height: 50px; width: 50px;" class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkgsPLsUD7hHluJZxlMMc-V90m-O5qS3rdJw&usqp=CAU" alt=""> -->
+        <a class="navbar-brand" href="#">P2C.IT</a>
+        <p class="text-center">All solutions for Laravel by <span style="color: rgb(46, 1, 223);">P2c</span> IT</p>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-icon">
+            <a class="nav-link" aria-current="page" href="#">i</a>
+          </div>
+        </div> -->
+      </div>
+    </nav>
+<!--HEADER END-->
+
+
+<!--MAIN CONTENT START-->
+    <div class="container-fluid">
+      <div class="d-flex align-items-start">
+        <div class="scrool">
+           <ul class="nav flex-column nav-pills me-3 side_bar" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+             <li class="nav-link active" id="v-pills-part-1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-part-1" type="button" role="tab" aria-controls="v-pills-part-1" aria-selected="true">What is Laravel Framework?</li>
+             <li class="nav-link" id="v-pills-part-2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-part-2" type="button" role="tab" aria-controls="v-pills-part-2" aria-selected="true">Laravel Installation </li>
+             <li class="nav-link" id="v-pills-part-3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-part-3" type="button" role="tab" aria-controls="v-pills-part-3" aria-selected="true">Laravel Files and Folders Structure</li>
+             <li class="nav-link" id="v-pills-part-4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-part-4" type="button" role="tab" aria-controls="v-pills-part-4" aria-selected="true">MVC Pattern</li>
+             <li class="nav-link" id="v-pills-part-5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-part-5" type="button" role="tab" aria-controls="v-pills-part-5" aria-selected="true">Laravel Routes</li>
+             <li class="nav-link" id="v-pills-part-6-tab" data-bs-toggle="pill" data-bs-target="#v-pills-part-6" type="button" role="tab" aria-controls="v-pills-part-6" aria-selected="true">Laravel Middleware</li>
+             <li class="nav-link" id="v-pills-part-7-tab" data-bs-toggle="pill" data-bs-target="#v-pills-part-7" type="button" role="tab" aria-controls="v-pills-part-7" aria-selected="true">Laravel Controller</li>
+             <li class="nav-link" id="v-pills-part-8-tab" data-bs-toggle="pill" data-bs-target="#v-pills-part-8" type="button" role="tab" aria-controls="v-pills-part-8" aria-selected="true">Laravel Routing use href Syntax</li>
+             <li class="nav-link" id="v-pills-part-9-tab" data-bs-toggle="pill" data-bs-target="#v-pills-part-9" type="button" role="tab" aria-controls="v-pills-part-9" aria-selected="true">Laravel CSRF Protection</li>
+             <!-- <li class="nav-link" id="v-pills-part-10-tab" data-bs-toggle="pill" data-bs-target="#v-pills-part-10" type="button" role="tab" aria-controls="v-pills-part-10" aria-selected="true">Laravel Request</li> -->
+             <li class="nav-link" id="v-pills-part-11-tab" data-bs-toggle="pill" data-bs-target="#v-pills-part-11" type="button" role="tab" aria-controls="v-pills-part-11" aria-selected="true">CRUD With Image</li> 
+             <li class="nav-link" id="v-pills-part-12-tab" data-bs-toggle="pill" data-bs-target="#v-pills-part-12" type="button" role="tab" aria-controls="v-pills-part-12" aria-selected="true">CRUD Without Image</li> 
+           </ul>
+        </div>
+                                
+         <div class="tab-content" id="v-pills-tabContent" style="margin-left: 280px; padding: 20px;">
+
+                                <!-- Laravel Framework start? -->
+           <div class="tab-pane fade show active" id="v-pills-part-1" role="tabpanel" aria-labelledby="v-pills-part-1-tab" tabindex="0">
+
+              <!-- PHP কি? -->
+              <h1>PHP Laravel Framework কি? তা বুঝার জন্য আমাদেরকে প্রথমে জানতে হবে PHP কি? এবং Framework কি?</h1>
+              <img style="height: 30%; width: 70%;" src="./img/laravel-10-featured.png" alt="">
+              <h1>PHP কি?</h1>
+              <p>
+                PHP হচ্ছে একটি সার্ভার সাইড স্ক্রিপ্টিং ভাষা, যা তৈরী করেন রাসমাস লারডোর্ফ ১৯৯৪ সালে।  যা বিশেষ ভাবে যেকোনো ডাইনামিক এবং ইন্টারেক্টিভ ওয়েব ডেভেলপমেন্ট অথবা ওয়েব ভিত্তিক সফটওয়্যার এবং ওয়েব ভিত্তিক এপ্লিকেশন বানানোর জন্য ব্যবহৃত হয়। বর্তমানে এটিকে জেনারেল পারপাস প্রোগ্রামিং ল্যাঙ্গুয়েজ ও বলা হয়। অর্থাৎ, অন্যান্য প্রোগ্রামিং ভাষা দিয়ে যা যা করা যায়, PHP দিয়েও মোটামুটি তার সবই করা যায়। এছাড়া PHP ওপেনসোর্স হওয়ায় ওয়েব প্রোগ্রামারদের কাছে অধিক জনপ্রিয় । তবে মূলত, ওয়েব ডেভেলপমেন্টের, ওয়েব ভিত্তিক সফটওয়্যার এবং ওয়েব ভিত্তিক এপ্লিকেশন বানানোর কাজেই এটি সর্বাধিক ব্যবহৃত হয়। এছাড়া পি এইচপি ওয়েবে তথ্য সংরক্ষণের ক্ষেত্রে সর্বোচ্চ নিরাপত্তা প্রদান করে। পি এইচ পি কে এইচ টি এম এল (HTML) এর সাথেও ব্যবহার করা যায়। ওয়ার্ডপ্রেস, জুমলা সহ বেশ কিছু এডভান্সড ওপেনসোর্স কনটেন্ট ম্যানেজমেন্ট সিস্টেম (CMS) পি এইচ পি দ্বারা তৈরি। পি এইচ পি ব্যবহার করে কাস্টম কনটেন্ট ম্যানেজমেন্ট সিস্টেম তৈরি করা যায়। এছাড়া ই-কমার্স, ম্যানেজমেন্ট, অনলাইন ব্যাংকিং সফটওয়্যার ইত্যাদি তৈরিতেও পি এইচ পি ব্যাপকভাবে ব্যবহুত হচ্ছে। পি এইচ পি খুবই জনপ্রিয় একটি ভাষা, w3techs এর তথ্য অনুযায়ী পৃথিবীতে যত ওয়েব সাইট আছে তার শতকরা ৮২ ভাগই সার্ভার সাইড স্ক্রিপ্টিংয়ে PHP ব্যবহার করে। PHP ফ্রেমওয়ার্ক এ কাজ করতে হলে PHP Object Oriented Programming সম্পর্কে খুব ভালো ধারণা থাকা প্রয়োজন।
+              </p>
+
+
+                <!-- ফ্রেমওয়ার্ক কি? -->
+
+                <h1 class="mt-5">ফ্রেমওয়ার্ক কি?</h1>
+
+                 <p>
+                  ধরা যাক, আপনি একজন বিল্ডিং কনস্ট্রাকশন ইঞ্জিনিয়ার এবং আপনাকে একটা বিল্ডিং তৈরি করতে দেওয়া হলো। এখন আপনাকে দুইটি অপশন দেওয়া হলো:
+                 </p>
+
+                  <p>
+                    প্রথমত, আপনাকে একটি প্লট, বিল্ডিং এর architectural ডিজাইন এবং বিল্ডিং তৈরির যত টাকা দরকার তা দেওয়া হলো এবং বলা হলো একটি বিল্ডিং তৈরি করতে। কিন্তু আপনাকে বিল্ডিং তৈরির সামগ্রী যেমন, ইট , বালি, সিমেন্ট, রড, মিক্সার, লেবার সহ যাবতীয় অন্যান্য সরঞ্জামাদির কিছুই দেওয়া হলোনা, যেগুলোর সব কিছুই আপনাকে কালেকশন অথবা তৈরী করে বিল্ডিং এর কাজে ব্যবহার করতে হবে।
+                  </p>
+
+                  <p>
+                    এবং দ্বিতীয়ত,আপনাকে বিল্ডিং এর প্লট, বিল্ডিং এর architectural ডিজাইন, বিল্ডিং তৈরির সামগ্রী যেমন, ইট , বালি, সিমেন্ট, রড, মিক্সার, লেবার সহ যাবতীয় অন্যান্য সরঞ্জামাদির সব কিছুই দেওয়া হল, এখন আপনাকে এগুলোকে কাজে লাগিয়ে শুধু বিল্ডিং টি তৈরী করে দিতে হবে। একজন ইঞ্জিনিয়ার হিসেবে আপনার জন্য কোনটি বেটার অপশন হবে?
+                  </p>
+
+                  <p>
+                    নিঃসন্দেহে দ্বিতীয়টি। যদিও প্রথমটি দিয়ে কাজ করা সম্ভব, কিন্ত এর সবচেয়ে বড় প্রব্লেম হচ্ছে এখানে আপনার অনেক বেশি সময়ের প্রয়োজন হবে। যা বিল্ডিং তৈরীর সময় এবং খরচ দুটোই বেড়ে যাবে।
+                  </p>
+
+                  <p>
+                    এক্ষেত্রে দ্বিতীয় অপশনটি ভালো। কেননা এখানে আগে থেকেই সব কিছু রেডি থাকে আর তাতে আপনার বিল্ডিং তৈরীর সময় এবং খরচ দুটোই অনেক কমে যাবে।
+                  </p>
+
+                  <p>
+                    ফ্রেমওয়ার্ক হচ্ছে আমাদের দ্বিতীয় অপশনটির মতোই, যেখানে ওয়েব ডেভেলপমেন্ট ,অ্যাপ্লিকেশান ডেভেলপমেন্ট এবং সফটওয়্যার ডেভেলপমেন্ট এর জন্য সব কিছু রেডি থাকে এবং আপনাকে শুধু এর ব্যবহার জানতে হবে। আর তাতে আপনার ওয়েব ডেভেলপমেন্ট ,অ্যাপ্লিকেশান ডেভেলপমেন্ট এবং সফটওয়্যার ডেভেলপমেন্ট তৈরীর সময় এবং খরচ দুটোই অনেক কমে যাবে। আবার অন্য ভাবে বলতে পারি ফ্রেমওয়ার্ক হচ্ছে রেডিমেড ক্লাস ও ইন্টারফেসের কালেকশন যার মাধ্যমে আমরা বিভিন্ন ধরনের ওয়েব ডেভেলপমেন্ট ,অ্যাপ্লিকেশান ডেভেলপমেন্ট এবং সফটওয়্যার ডেভেলপমেন্ট খুব সহজে এবং কম সময়ে করতে পারি।
+                  </p>
+               
+
+              
+           </div>
+                                 <!-- Laravel Framework end? -->
+
+
+                                  <!-- Laravel Installation start -->
+           <div class="tab-pane fade show" id="v-pills-part-2" role="tabpanel" aria-labelledby="v-pills-part-2-tab" tabindex="0">
+
+            <p>
+              <strong>প্রথম ধাপ:</strong> প্রথম প্রথমে চেক করুন আপনার কম্পোজার টি running কিনা? এর জন্য আপনাকে composer লিখে enter press করতে হবে। যদি running থাকে তাহলে নিচের মতো ফলাফল আসবে :
+            </p>
+
+            <h1>Windows Output:</h1>
+
+            <div class="images">
+              <img src="./img/composer-running-on-windows.png" alt="">
+            </div>
+            <p>
+              <strong>দ্বিতীয় ধাপ:</strong> এইবার আপনি আপনার যেই ফোল্ডার এ laravel Project Install করবেন , সেই ফোল্ডার এ PowerShell অথবা cmd ওপেন করুন। এরপর নিচের কমান্ডটি লিখুনঃ
+            </p>
+           <div class="code">
+            <strong>composer create-project laravel/laravel your-project-name</strong>
+           </div>
+            <p>	
+             <strong> ধাপ ৩:</strong> এবার আপনাকে আপনার project folder এ নেভিগেট করতে হবে এবং নিচের command টি রান করতে হবে।
+            </p>
+            <div class="code">
+              <strong>php artisan serve</strong>
+             </div>
+
+             <p>নিচের screenshot টি দেখুন :</p>
+             <div class="images">
+              <img src="./img/php-artisan-serve.JPG" alt="">
+            </div>
+            <p>
+              <strong>ধাপ ৪:</strong> এবার আপনাকে আপনার যে কোনো ব্রাউজার এ গিয়ে http://127.0.0.1:8000/ লিখে এন্টার দিন। আপনি নিচের স্ক্রিনশট এর মতো আউটপুট পাবেন :
+            </p>
+            <div class="images">
+              <img src="./img/localhost.JPG" alt="">
+            </div>
+           </div>
+                                  <!-- Laravel Installation end -->
+
+
+                            <!-- Laravel Files and Folders Structure start -->
+           <div class="tab-pane fade show" id="v-pills-part-3" role="tabpanel" aria-labelledby="v-pills-part-3-tab" tabindex="0"> 
+            <h1>কেন আপনার জন্য Laravel File এবং Folder Structer জানা দরকার?</h1>
+
+            <p>ধরুন আপনি কোথাও যাবেন, কিন্তু সেখানে রাস্তা ঘাট কিছুই চেনেন না। তাহলেতো সেই জায়গায় গেলে আপনাকে অনেক সমস্যায় পড়তে হতে পারে। এবং আপনি যেই কাজের জন্য যাবেন সেই কাজটি ও করতে পারবেন না। একইভাবে Laravel সহ যেকোনো Framework নিয়ে কাজ করতে হলে এর file এবং Folder structure আপনার জানা জরুরি। কেননা Laravel File এবং Folder Structure সম্পর্কে আপনার ভালো ধারণা না থাকলে, লারাভেল শিখতে এবং এটি ব্যবহার করে Project Development এ পরবর্তীতে আপনাকে সমস্যায় পড়তে হতে পারে।</p>
+
+            <h1>Laravel File এবং Folder বিন্যাস</h1>
+
+            <p>ডিফল্ট Laravel ফাইল এবং ফোল্ডার স্ট্রাকচার টি মূলত ছোট বড় সব ধরণের application development এর জন্য সাজানো হয়েছে, তবে আপনি চাইলে আপনার নিজের ইচ্ছে মতো করে ফাইল এবং ফোল্ডার structure সাজাতে পারেন। এর জন্য লারাভেল আপনাকে কোনো রেস্ট্রিকশন দিবেনা যতক্ষণ কম্পোজার class গুলো autoload করতে পারে। Laravel File এবং folder বিন্যাস টি নিচের ছবির মতো পাবেন:</p>
+
+            <div class="images">
+              <img src="./img/laravel-folder.JPG" alt="">
+            </div>
+
+            <p>উপরের ছবিতে আমরা সাধারণ ভাবে ১১ টি Directory ও কিছু File পাই। যেমন:</p>
+            <h3>Laravel Files and Folders গুলোর Root Directory</h3>
+            <div class="laravel-file-folder">
+              <ul>
+                  <li>app</li>
+                  <li>bootstrap</li>
+                  <li>config</li>
+                  <li>database</li>
+                  <li>lang</li>
+                  <li>public</li>
+                  <li>resources</li>
+                  <li>routes</li>
+                  <li>storage</li>
+                  <li>tests</li>
+                  <li>vendor</li>
+              </ul>
+            </div>
+            <h3>Laravel Files and Folders গুলোর Root এর মধ্যে অবস্থিত App Directory</h3>
+            <div class="laravel-file-folder-App-Directory">
+              <ul>
+                  <li>app</li>
+                  <li>bootstrap</li>
+                  <li>config</li>
+                  <li>database</li>
+                  <li>lang</li>
+                  <li>public</li>
+                  <li>resources</li>
+                  <li>routes</li>
+                  <li>storage</li>
+                  <li>tests</li>
+                  <li>vendor</li>
+              </ul>
+            </div>
+            <p>এখন চলুন Laravel Files and Folders গুলোর Root Directory এর মধ্যে কোনটির কি কাজ সেটা দেখা এবং বুঝা যাক :</p>
+
+            <div class="all-file-folder">
+              <h5>1. app:</h5>
+              <p>Laravel Files and Folders গুলোর Root এর মধ্যে অবস্থিত App Directory মূলত আপনার জন্য, অর্থাৎ এই ডিরেক্টরিতে আপনার এপ্লিকেশন এর Core কোড গুলো থাকবে , যেগুলো আপনিই বানাবেন । যেমনঃ Controller, Middleware সহ অন্যান্য প্রয়োজনীয় class গুলো।</p>
+              <h5>2. bootstrap:</h5>
+              <p>Laravel Files and Folders গুলোর Root এর মধ্যে অবস্থিত bootstrap Directory এর মধ্যে app.php ফাইলটি থাকে, যা দিয়ে Laravel Framework টি কে bootstraps করে। তা ছাড়া এই ফোল্ডার এর মধ্যে একটি cache folder ও থাকে, যার মধ্যে performance optimization এর জন্য Framework Generated file এবং folder গুলো থাকে , যেমন routes এবং services cache files .</p>
+              <h5>3. config</h5>
+              <p>Laravel Files and Folders গুলোর Root এর মধ্যে অবস্থিত config Folder এর মধ্যে আপনার application এর সব configuration ফাইল গুলো থাকবে। যেমন ডাটাবেস, মেইল, সেশন ইত্যাদি।</p>
+              <h5>4. database</h5>
+              <p>Laravel Files and Folders গুলোর Root এর মধ্যে অবস্থিত database folder এ আপনার application এর সব database migration এবং seeds থাকবে । এমনকি SQLite database ফাইলটাও এখানে থাকে। database migration এবং seeds কি? পরে বিস্তারিত আলোচনা করব।</p>
+              <h5>5. lang</h5>
+              <p>lang directory তে আপনার অ্যাপ্লিকেশনের সমস্ত language ফাইল গুলো থাকে।</p>
+              <h5>6. public</h5>
+              <p>Laravel Files and Folders গুলোর Root এর মধ্যে অবস্থিত Public Directory তে আপনার index.php file থাকবে, যেটি আপনার application এর সব ধরণের request এর entry point হিসেবে ব্যবহৃত হবে আর সব ধরনের asset যেমন CSS, JS, fonts, image ইত্যাদি থাকবে।</p>
+              <h5>7. resources</h5>
+              <p>এই folder এ আপনার ফ্রন্ট এন্ড ফাইল view থাকবে । তা ছাড়া যত রকমের uncompiled যেমন LESS, SASS, JavaScript এবং Language ফাইলগুলাও এখানে থাকবে।</p>
+              <h5>8. routes</h5>
+              <p>এই folder এ আপনার application এর সব route definitions গুলা থাকবে। যেমনঃ web.php, api.php, channels.php, এবং console.php. আমরা route নিয়ে পরে বিস্তারিত আলোচনা করব।</p>
+              <h5>9. storage</h5>
+              <p>এই folder এ আপনার application এর সব compiled Blade templates, file based sessions, file caches, এবং framework generated অন্যান্য file গুলো থাকবে। এই folder টি তিনটি folder যথাক্রমে app, framework, এবং logs folder এ বিভক্ত। app folder আপনার application generated ফাইল গুলো থাকবে, framework folder আপনার framework generated ফাইল গুলো থাকবে এবং logs folder আপনার application এর লগ ফাইল গুলো থাকবে।</p>
+              <h5>10. tests</h5>
+              <p>এই folder এ আপনার application এর test ফাইল গুলা থাকে , যেমনঃ PHPUnit ফাইল।</p>
+              <h5>11. vendor</h5>
+              <p>এই folder এ আপনার সব Composer dependency ফাইলগুলা থাকে।</p>
+            </div>
+           </div>
+                            <!-- Laravel Files and Folders Structure end -->
+
+
+
+                                       <!-- MVC Pattern start-->
+          <div class="tab-pane fade show" id="v-pills-part-4" role="tabpanel" aria-labelledby="v-pills-part-4-tab" tabindex="0"> 
+           
+            <h3 class="pt-3">MVC কি ?</h3>
+            <p>এটি এমন একটি প্রক্রিয়া বা পদ্ধতি যে প্রক্রিয়াতে আমাদের সফটওয়্যারকে তিন ভাগে ভাগ করে ফেলি বা সোর্স কোড গুলোকে তিন ভাগে ভাগ করার প্রক্রিয়া যেমন :</p>
+            <div class="option">
+              <ul>
+                <li>Model</li>
+                <li>View</li>
+                <li>Controller</li>
+              </ul>
+            </div>
+            <h3>MVC Pattern কিভাবে কাজ করে?</h3>
+            <div class="images">
+              <img src="./img/MVC.png" alt="">
+            </div>
+
+            <div class="mvc-work">
+              <ul>
+                <li>প্রথমে একজন ব্যবহারকারী একটি নির্দিষ্ট URL এ একটি রিকোয়েস্ট পাঠায় যেমন ("example.com/products")।</li>
+
+                <li>এরপর রিকোয়েস্ট টি Laravel Application  এর রাউটিং এ আসে এবং সে URL টা এখানে চেকিং করে যে URL থেকে রিকোয়েস্ট পাঠানো হয়েছে সেটি এখানে লেখা আছে কিনা যদি রাউটিং এ সেই URL টা থাকে এবং সেটি যদি ম্যাচ করে তাহলে সে কন্ট্রোলার কে কল করবে এবং কন্ট্রোলারে এ দেখবে যে আমরা কি কি করেছি যদি আমরা Model কল করি তাহলে মডেলে আসবে</li>
+                
+                <li>মডেল থেকে database এ যাবে এবং database সেটিকে চেকিং করবে যে নামটি আছে কিনা যদি database এর  কাছে নামটি থাকে তাহলে সে সাকসেস রিকোয়েস্ট পাঠাবে </li>
+
+                <li>এবং data মডেল এ return করবে ।</li>
+
+                <li>মডেল থেকে data টি আবার কন্ট্রোলার এ retrun করবে</li>
+
+                <li>কন্ট্রোলার থেকে data টি view তে পাঠিয়ে দিবে</li>
+
+                <li>এবং ভিউ data টিকে render করে ইউজার কে দেখাবে ।</li>
+              </ul>
+            </div>
+          </div>
+                                       <!-- MVC Pattern end-->
+
+
+                                       <!-- Laravel Route start -->
+           <div class="tab-pane fade show" id="v-pills-part-5" role="tabpanel" aria-labelledby="v-pills-part-5-tab" tabindex="0"> 
+              <h1>Laravel Route কি?</h1>
+              <p>সাধারণত ইংরেজি শব্দ route যাকে অনেক সময় আমরা বাংলায় বলি রুট যার অর্থ দাঁড়ায় গন্তব্যস্থলে পৌঁছানোর রাস্তা। আর Laravel Application এ route হচ্ছে URL থেকে request গ্রহণ করে এবং application কে resource এর জন্য নির্দেশনা প্রদান করে। আরো সহজ ভাবে বলা যায় route হল আপনার অ্যাপ্লিকেশনের একটি request এর বিপরীতে কোন URL টি hit হবে? বা কোথায় থেকে কি response করবে তা নির্ধারণের একটি উপায়। Laravel এ সব route গুলো routes ফোল্ডারে তৈরী করা থাকে। এর মধ্যে web application এর route সমূহ routes/web.php তে লিখা হয়। এবং API এর জন্য route সমূহ routes/api.php তে লিখা হয়। Laravel Framework এ route এর সবচেয়ে বড় সুবিধা হচ্ছে আপনি এক যায়গা থেকেই সমস্ত route কে নিয়ন্ত্রণ করতে পারবেন অর্থাৎ পরবর্তিতে route সম্পর্কিত যেকোনো ধরনের পরিবর্তন এখান থেকেই করতে পারবেন। </p>
+              <img style="height: 30%; width: 60%;" src="./img/Laravel-Route-1024x821.jpg" alt="">
+              <h1>Laravel Route এর প্রাথমিক ধারণা</h1>
+              <p>ধরুন আমাদের Web Application এ তিনটি পেজ আছে , সেগুলো যথাক্রমে Home Page, About Page এবং Contact Page. এখন Web Application ব্যবহারকারী এই তিনটি পেজ এর মধ্যে যাকে request করবে শুধু সংশ্লিষ্ট পেজটি response করবে। অনেকটা নিচের URL এর মত:</p>
+              
+              <h2> for Home page:</h2>
+              <p>http://localhost:8000/</p>
+              <h2> for About page:</h2>
+              <p>http://localhost:8000/about</p>
+              <h2> for Contact page:</h2>
+              <p>http://localhost:8000/contact</p>
+
+              <p>এখন এই তিনটি URL Request এর জন্য আপনি Laravel এর routes/web.php ফাইল এ ঠিক নিচের মত করে লিখতে পারেন। </p>
+
+              <div class="editor-container">
+              <div id="editor">
+// routes/web.php 
+Route::get('/', function (){
+  return view ('home');
+});
+Route::get('/about', function (){
+  return view ('about');
+});
+Route::get('/contact', function (){
+  retrun view ('contact');
+}); 
+              </div>
+              </div>
+              <p class="py-4"><strong>নোট :</strong>এখানে get মেথডের মধ্যে দুইটি প্যারামিটার রিসিভ করেছে প্রথম প্যারামিটার ''/about যার মাধ্যমে আমাদের url এ হিট করলে কোন ব্লেড ফাইল অথবা পেজে যাবে সেটা নির্দেশ করে, দ্বিতীয় প্যারামিটারে কলব্যাক ফাংশনের মাধ্যমে ব্লেড ফাইলটি রিটার্ন করেছে  যেমন:  'home'</p>
+                          
+              <p class="pt-3">এখন আপনি আপনার ব্রাউজার এর Address bar এ http://localhost:8000 , http://localhost:8000/about এবং http://localhost:8000/contact লিখে hit করুন, তাহলে আপনার route ঠিক নিম্নের screenshot এর মতো রেজাল্ট দেখাবে:</p>
+              <img src="./img/Home-page-Route.JPG" alt="HomePage" style="height: 200px; width: 60%; border: 1px solid #000; ">
+              <img src="./img/About-Page-Route.JPG" alt="AboutPage" style="height: 200px; width: 60%; border: 1px solid #000;" class="my-3">
+              <img src="./img/Contact-Page_Route.JPG" alt="ContactPage" style="height: 200px; width: 60%; border: 1px solid #000; ">
+              <img src="" alt="">
+              <img src="" alt="">
+              <p><strong>নোট:</strong> অবশ্যই ” php artisan serve ” command দিয়ে server run রাখতে ভুলবেননা।</p>
+              <p><strong>ব্যাখ্যা:</strong> উপরোক্ত উদাহরণে আমরা Route class এর get() মেথডকে call করেছি। Route Class এর get() মেথডটি দুইটি Argument গ্রহণ করে। প্রথম Argument হিসেবে URL Path অর্থাৎ যেই URL এ hit করবে সেটি, এবং দ্বিতীয় Argument হিসেবে একটি Anonymous Function সাথে closure থাকতে পারে। যেমনঃ উপরোক্ত উদাহরণে আমাদের Home URL এর জন্য প্রথম আর্গুমেন্ট হিসেবে শুধু forward slash ( / ) ব্যবহার করি , যার দ্বারা Laravel route রুট ডোমেইনকে নির্দেশ করে। একই ভাবে About URL এর জন্য forward slash সাথে about (/about) এবং Contact URL এর জন্য forward slash সাথে contact(/contact) লিখি। আর তিনটি URL এর জন্যই দ্বিতীয় Argument হিসেবে একটি Anonymous Function ব্যবহার করি যার দ্বারা action কি হবে তা নির্ধারণ করি।</p>
+           </div>
+                                       <!-- Laravel Route end -->
+
+          
+                                       
+           <div class="tab-pane fade show" id="v-pills-part-6" role="tabpanel" aria-labelledby="v-pills-part-6-tab" tabindex="0"> 
+            <p>
+              Laravel Framework এ Middleware হচ্ছে আপনার application এ বিভিন্ন সোর্স থেকে আসা HTTP request গুলোকে controller এ পাঠানোর আগে filtering করার একটা দুর্দান্ত Mechanism বা পদ্ধতি। ধরুন Laravel authentication Middleware এর কথাই ধরা যাক, যখন আপনার application এ কোনো user লগইন করতে চায়, সেক্ষেত্রে Laravel authentication Middleware কাজ হচ্ছে যেই user লগইন করতে চায় , তাকে authentication Middleware নিজে Middle Man হিসেবে verify করবে , যদি ইউজার authenticated না হয় , তাহলে Laravel authentication Middleware সেই user কে login screen এ পাঠাবে , আর যদি authenticated হন, তাহলে laravel authentication Middleware ইউজারকে পরবর্তী কাজ করার বা পরবর্তী ধাপে যাওয়ার অনুমতি প্রধান করবে। সহজ ভাবে বলা যায় , আপনার application এ যেকোনো request এর পর এবং response এর পূর্বে সব ধরণের verification এবং authentication করার Mechanism হচ্ছে Middleware. Laravel এ Middleware ফাইল গুলা app/Http/Middleware এই ডিরেক্টরিতে রাখতে হয়।
+            </p>
+           </div>
+                                    <!-- Laravel Controller Start -->
+           <div class="tab-pane fade show" id="v-pills-part-7" role="tabpanel" aria-labelledby="v-pills-part-7-tab" tabindex="0"> 
+            <h3>Laravel Controller Larvel Framework এ Controller কি?</h3>
+            <div class="images">
+              <img src="./img/MVC.png" alt="MVC" class="my-3">
+            </div>
+            <p class="py-4">Controller নামটা দেখেই বুঝা যাচ্ছে Framework এর মধ্যে কোনো কিছু Control করা। হ্যাঁ আসলেই ঠিক, MVC Framework এর মধ্যে “C” অক্ষরটি Controller এর জন্য ব্যবহৃত হয়। Laravel অথবা যেকোনো MVC Framework এ Controller এর কাজ হচ্ছে View এবং Model কে Control বা নিয়ন্ত্রণ করা বা Model এবং View এর সাথে সমন্বয় সাধন করা। MVC ভিত্তিক যেকোনো software অথবা Web Application এর সমস্ত Business Logic রাখা হয় Controller এ । User কোন কিছুর জন্য request করলে সেটা প্রথমে যায় Controller এ । Request এর Response যদি Database এর কোন Data প্রয়োজন হয় তবে Controller তা Model এর মাধ্যমে এনে user এর প্রয়োজন অনুযায়ী Process করে View তে পাঠায়। এরপর User তার Request এর Response দেখতে পায়। যদিও আপনি এই কাজটি Laravel এর Controller ছাড়া route এ define করে view এবং Model এর মধ্যে যোগাযোগ করতে পারেন। আলাদাভাবে Controller ব্যাবহার করা হচ্ছে MVC Platform এর একটি আদর্শ পদ্ধতি। আর এতে সুবিধা হচ্ছে আপনার software অথবা Web Application এর সব Logic গুলো route এর মধ্যে একসাথে না রেখে আলাদা একটা পৃথক ফাইল অর্থাৎ একটি সিঙ্গেল Controller Class এর মধ্যে রাখা। আর যখন ওই Controller Class এর কোন Function অথবা কোন Method কে HTTP Request এর মাধ্যমে কল করার দরকার হবে তখন সেটা আপনাকে route এর মধ্যে define করে দিতে হবে। Laravel এ Controller ফাইল গুলা App/Http/Controllers এই ডিরেক্টরিতে রাখতে হয়।</p>
+            <h1>Laravel Framework এ কিভাবে Controller তৈরী করা হয় ?</h1>
+            <p>Laravel framework এ Laravel এর নিজস্ব Abstract class Controller থেকে extends করার মাধ্যমে আপনি নিজের জন্য একটা controller তৈরী করে নিতে পারেন। তবে তাতে অনেক সময় namespace decleration সহ অন্যান্য কিছু সমস্যা হতে পারে, তারচেয়ে ভালো হয়, আপনি Laravel এর নিজস্ব Artisan CLI (Command Line Interface ) ব্যবহার করে কাজটি করলে। এতে আপনি শুধু Controller টির নামটি বলবেন, বাকি সবকাজ laravel নিজেই করে নিবে। CLI (Command Line Interface) দিয়ে একটা Controller Class তৈরী করতে হলে আপনাকে CLI দিয়ে প্রথমে আপনাকে আপনার Laravel এর Project directory তে নেভিগেট করতে হবে। তাহলে চলুন CLI (Command Line Interface)এ নিচের কোডটি দিয়ে একটা Controller Class তৈরী করি:</p>
+
+            <div class="code">
+                php artisan make:controller YourControllerName
+            </div>
+            <p><strong>এখানে  YourControllerName এর জায়গায় কন্ট্রোলার নেমটি দিতে হবে যেমন : HomeController</strong> </p>
+            <p>আপনার CLI (Command Line Interface) ঠিক নিচের মতো করে একটা রেজাল্ট দেখাবে :</p>
+            <p>এখন আপনি App\Http\Controllers ডিরেক্টরিতে HomeController.php নামে একটি সম্পূর্ণ নতুন Controller পাবেন। যেটাতে ঠিক নিচের মতো কোড দেখতে পাবেন :</p>
+
+            <div class="editor-container">
+            <div id="controller1">
+// app\Http\Controllers
+?php
+
+namespace App\Http\Controllers;
+  
+use Illuminate\Http\Request;
+  
+class HomeController extends Controller
+{
+    //
+} 
+            </div>
+            </div>
+
+            <p class="py-4">এবার আপনি আপনার নিজের controller এ যেকোনো নতুন Method তৈরী করতে পারেন, এবং সেটাকে Route থেকে call করতে পারেন। ধরুন আমরা একটা HomePage নামে একটি method তৈরী করব। এবং সেখানে শুধু “Home Page” লেখাটি show করব। নিচের কোডটি দেখুন :</p>
+
+            <div class="editor-container">
+            <div id="controller2">
+// app\Http\Controllers
+?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class HomeController extends Controller
+{
+    public function HomePage(){
+      retrun view ('home');
+    }
+}
+            </div>
+            </div>
+            <h2 class="py-3">route এর মাধ্যমে controller class এর যেকোনো মেথড show করা</h2>
+            <p>route এর মাধ্যমে controller class এর যেকোনো Method কে ব্রাউজার এ দেখাতে হলে আপনাকে route class এর get Method এ প্রথম Parameter হিসেবে url বা page এর নাম দিতে হবে, এবং দ্বিতীয় parameter এ controllerName@methodName দিতে হবে। নিচের কোডটি দেখুন:</p>
+            <div class="editor-container" style="height: 120px;">
+              <div id="controller3">
+// app\Http\Controllers
+use app\Http\Controllers\HomeController;
+
+Route::get('/', [HomeController::class, 'HomePage']);
+              </div>
+            </div>
+            <p><strong>এখানে slash বলতে ডিরেক্ট Home page কে বুঝায়</strong></p>
+            <p class="pt-3"><strong>নোট: </strong>এখানে web.php তে অবশ্যই কন্ট্রোলারটি  use করে দিতে হবে যেমন : use app\Http\Controllers\HomeController;</p>
+            <p>এখন আপনি আপনার ব্রাউজার এর Address bar এ “http://localhost:8000” লিখে hit করুন, তাহলে আপনার route ঠিক নিম্নের screenshot গুলোর মতো রেজাল্ট দেখাবে:</p>
+            <img src="./img/Home-page-Route.JPG" alt="HomePage" style="height: 200px; width: 60%; border: 1px solid #000; ">
+            <img src="./img/About-Page-Route.JPG" alt="AboutPage" style="height: 200px; width: 60%; border: 1px solid #000;" class="my-3">
+            <img src="./img/Contact-Page_Route.JPG" alt="ContactPage" style="height: 200px; width: 60%; border: 1px solid #000; ">
+            <p class="pt-3">আমরা আমাদের বাকি পেজগুলোকে এভাবেই কন্ট্রোলারের মাধ্যমে রাউটিং করতে পারি ।</p>
+            </div>
+                                    <!-- Laravel Controller End -->
+
+
+                            <!-- Laravel Routing Use href Syntax Start-->
+           <div class="tab-pane fade show" id="v-pills-part-8" role="tabpanel" aria-labelledby="v-pills-part-8-tab" tabindex="0"> 
+            <h3>এবার আমরা দেখব কিভাবে href ব্যবহার করে লিংক এর মাধ্যমে একপেজ থেকে অন্য পেজে যেতে পারি ।</h3>
+            <p>মনে করি, আমাদের ওয়েব এপ্লিকেশনে তিনটি পেজ আছে Home Page, About Page এবং Contact Page </p>
+            <p>নিজের কোডটি লক্ষ্য করুন :</p>
+            <img src="./img/href-home-page-code.JPG" alt="AboutPage" style="height: 200px; width: 60%; border: 1px solid #000;" class="my-3">
+            <p><strong>এই কোডগুলো প্রত্যেকটি পেজে দিতে হবে</strong></p>
+            <p>এবার আপনাকে আপনার যে কোনো ব্রাউজার এ গিয়ে http://127.0.0.1:8000/ লিখে এন্টার দিন। আপনি নিচের স্ক্রিনশট এর মতো আউটপুট পাবেন :</p>
+            <img src="./img/href-routing-home-page.JPG" alt="HomePage" style="height: 200px; width: 60%; border: 1px solid #000; ">
+            <img src="./img/href-routing-about-page.JPG" alt="AboutPage" style="height: 200px; width: 60%; border: 1px solid #000;" class="my-3">
+            <img src="./img/href-routing-contact-page.JPG" alt="ContactPage" style="height: 200px; width: 60%; border: 1px solid #000; ">
+
+           </div>
+                             <!-- Laravel Routing Use href Syntax End-->
+
+                               <!-- Laravel @csrf Token Start-->
+           <div class="tab-pane fade show" id="v-pills-part-9" role="tabpanel" aria-labelledby="v-pills-part-9-tab" tabindex="0"> 
+            <h1>CSRF কি?</h1>
+            <p>CSRF যার পূর্ণরূপ হচ্ছে Cross-site Request Forgery. অর্থাৎ , অপর বা অন্য একটা সাইটের দ্বারা একটা ভুয়া রিকোয়েস্ট পাঠিয়ে জালিয়াতি করাকে বুঝানো হয়। তো সেই ভুয়া রিকোয়েস্ট পাঠিয়ে কিভাবে জালিয়াতি করা হয় , তা নিয়ে একটু আলোচনা করা যাক। ধরুন আপনি একটা ওয়েবসাইটে লগইন করলেন, তখন উক্ত সাইট আপনাকে একটা সাময়িক সিকিউরিটি টোকেন বা কুকি দেবে (যেটা আসলে আপনার অজান্তেই কাজ করবে ), যা ব্যবহার করে আপনি বিভিন্ন রিকোয়েস্ট সাবমিট বা সার্ভিস গ্রহণ করতে পারবেন। ঠিক তখনি হ্যাকার চেষ্টা করবে আপনার ব্রাউজার থেকে সেই সিকিউরিটি টোকেন কপি করতে এবং সেই সিকিউরিটি টোকেন ব্যবহার করে সার্ভারকে একটা ভুয়া রিকোয়েস্ট পাঠিয়ে হ্যাকার নিজে একজন বৈধ ইউজার সেজে আপনার একাউন্টে ঢুকে পড়বে এবং প্রয়োজনীয় তথ্য হাতিয়ে নিবে।। আর এই পুরো ব্যাপারটিকে বলা হয় Cross-site Request Forgery.</p>
+            <h1>CSRF আক্রমণের ফলে কি ধরণের সমস্যা হতে পারে?</h1>
+            <p>একটি সফল CSRF attack ব্যবসা এবং ব্যবহারকারী উভয়ের জন্যই মারাত্মক ক্ষতির কারণ হতে পারে। এর ফলে ক্লায়েন্টের সাথে সম্পর্ক যেমন ক্ষতিগ্রস্ত হতে পারে, একই সাথে আপনার অনুমতি ছাড়াই আপনার সম্পদ স্থানান্তর, পাসওয়ার্ড পরিবর্তন এবং এমনকি আপনার গুরুত্বপূর্ণ তথ্য (Credit Card এর বিস্তারিত) চুরি হয়ে যেতে পারে। এমনকি আক্রমণকারী আপনার সম্পূর্ণ একাউন্ট বা ওয়েবসাইটের নিয়ন্ত্রণও নিয়ে নিতে পারে।</p>
+            <h1>CSRF আক্রমণ গুলো কিভাবে করে?</h1>
+            <p>CSRF গুলি সাধারণত বিভিন্ন ধরণের ক্ষতিকারক সোশ্যাল ইঞ্জিনিয়ারিং ব্যবহার করে পরিচালিত হয়, আর এগুলো সাধারণত একটা ইমেল বা লিংকের মাধ্যমে করা হয়। যা ভিক্টিমের মাধ্যমে সার্ভারে একটি ভুয়া রিকোয়েস্ট পাঠানোর মাধ্যমে প্রতারণা করে। যেহেতু সন্দেহাতীত ব্যবহারকারী আক্রমণের সময় তাদের অ্যাপ্লিকেশন দ্বারা authenticated হয়, তাই একটি ভুয়া এবং একটি বৈধ রিকোয়েস্ট এর মধ্যে পার্থক্য করা অসম্ভব হয়ে যায়।</p>
+            <p>নিচের ছবিতে একজন attacker কিভাবে attack করে তা ব্যাখ্যা করা হল :</p>
+            <img src="./img/Cross-Site-Request-Forgery.jpg" alt="CSRF">
+            <h1> CSRF এর কাজ</h1>
+            <p>@csrf token এর কাজ এক এক টা form একবার submit হলে এক একটা token create করে । </p>
+           </div>
+                                 <!-- Laravel @csrf Token End -->
+
+           <!-- <div class="tab-pane fade show" id="v-pills-part-10" role="tabpanel" aria-labelledby="v-pills-part-10-tab" tabindex="0"> 
+
+           </div> -->
+                                      <!-- ===CRUD With Image Part Start=== -->
+           <div class="tab-pane fade show" id="v-pills-part-11" role="tabpanel" aria-labelledby="v-pills-part-11-tab" tabindex="0"> 
+            <div class="crud-with-img">
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1" aria-selected="false"> Route</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2" aria-selected="false">Controller</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-3-tab" data-bs-toggle="pill" data-bs-target="#pills-3" type="button" role="tab" aria-controls="pills-3" aria-selected="false">Model</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false">Table</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-5-tab" data-bs-toggle="pill" data-bs-target="#pills-5" type="button" role="tab" aria-controls="pills-5" aria-selected="false">Command</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-6-tab" data-bs-toggle="pill" data-bs-target="#pills-6" type="button" role="tab" aria-controls="pills-6" aria-selected="false">Multiauth</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-7-tab" data-bs-toggle="pill" data-bs-target="#pills-7" type="button" role="tab" aria-controls="pills-7" aria-selected="false">Blog</button>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab" tabindex="0">
+                  <p style="font-size: 16px; margin: 0px;"><strong>routes\web.php</strong></p>
+                  <div class="editor-container" style="height: 370px;">
+                    <div id="command1">
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\IndexBlogController;
+
+Route::get('/', [IndexBlogController::class, 'welcome']);
+Route::get('/create-blog', [IndexBlogController::class, 'create']);
+Route::post('/blog-store', [IndexBlogController::class, 'store']);
+Route::get('/all-blog', [IndexBlogController::class, 'all']);
+Route::get('/blog-delete/{id}', [IndexBlogController::class, 'delete']);
+Route::get('/blog-single/{id}', [IndexBlogController::class, 'show']);
+Route::get('/blog-eidt/{id}', [IndexBlogController::class, 'eidt']);
+Route::put('/blog-update/{id}', [IndexBlogController::class, 'update']);
+
+
+              </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab" tabindex="0">
+                  <p style="font-size: 16px; margin: 0px;"><strong>app\Http\Controllers\Controller.php</strong></p>
+                  <div class="editor-container" style="height: 370px;">
+                    <div id="command2">
+use App\Models\IndexBlog;
+use Illuminate\Support\Facades\File;           <!--image use korle ai command dite hobe-->
+
+    public function create()
+    {
+        return view('backend.blog.create');
+    }
+
+    public function store(Request $request){
+        $all_data = new IndexBlog ;
+
+        $all_data ->title= $request->title;
+        
+        $all_data ->description= $request->description;
+
+        if($request->hasFile('image')){
+            $file=$request->file('image');
+            $name=$file->getClientOriginalName();
+            $request->file('image')->storeAs('images/blog/',$name);
+            $file->move(public_path('images/blog'),$name);
+            $all_data->image = $name;   
+        }
+
+        $all_data->save();
+        return redirect()->to('/all-blog');
+    }
+
+
+    public function all()
+    {
+       $all_data = IndexBlog::select('*')->orderBy('id', 'DESC')->get();
+        return view('backend.blog.all', compact('all_data'));
+    }
+
+    public function welcome()
+    {
+       $all_data = IndexBlog::select('*')->orderBy('id', 'DESC')->get();
+        return view('layouts.welcome', compact('all_data'));
+    }
+
+    public function delete($id)
+    {
+        $data = IndexBlog::find($id);
+        $data->delete();
+        return redirect()->back();
+    }
+
+    public function show($id)
+    {
+        $data = IndexBlog::find($id);
+        return view('backend.blog.single',compact('data'));
+    }
+
+    public function eidt($id)
+    {
+        $data = IndexBlog::find($id);
+        return view('backend.blog.eidt',compact('data'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $data = IndexBlog::find($id);
+
+        $data->title= $request->title;
+        $data->description= $request->description;
+
+        if($request->hasfile('image')){
+            $destination = 'image/blog'.$data->image;
+            if(File::exists($destination)){
+                File::delete($destination);
+            }
+            $file=$request->file('image');
+            $name=$file->getClientOriginalName();
+            $request->file('image')->storeAs('images/blog/',$name);
+            $file->move(public_path('images/blog'),$name);
+            $all_data->image = $name;  
+        }
+        $data->update();
+        return redirect()->to('/all-blog');
+
+    }
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab" tabindex="0">
+                  <p style="font-size: 16px; margin: 0px;"><strong>app\Models\IndexBlog.php</strong></p>
+                  <div class="editor-container" style="height: 370px;">
+                    <div id="command3">
+?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class IndexBlog extends Model
+{
+    use HasFactory;
+}
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab" tabindex="0">
+                  <p style="font-size: 16px; margin: 0px;"><strong>database\migrations\2023_08_25_190306_create_index_blogs_table.php</strong></p>
+                  <div class="editor-container" style="height: 400px;">
+                    <div id="command4">
+
+?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('index_blogs', function (Blueprint $table) {
+            $table->id();//increment
+            $table->string('title',255)->nullable();
+            $table->string('image')->nullable();
+            $table->text('description')->nullable();
+            $table->timestamps();// timestamps ar maddhome created_at/updated_at ai 2 ta create hoy
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('index_blogs');
+    }
+};
+
+
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab" tabindex="0">
+                  <p style="font-size: 16px; margin: 0px;"><strong></strong></p>
+                  <div class="editor-container" style="height: 370px;">
+                    <div id="command5">
+composer create-project laravel/laravel example-app
+
+php artisan make:model Profile
+php artisan make:controller ProfileController
+php artisan make:migration create_profiles_table //migration is help to create model
+php artisan make:model Profile -mc   //এই কমান্ড এর মাধ্যমে মডেল টেবিল কন্ট্রোলার একসাথে ক্রিয়েট করা যাবে
+
+php artisan serve
+php artisan --version
+
+php arisan migrate    //টেবিল ক্রিয়েট করার পরেই মাইগ্রেট করতে হবে এরপর রিলোড করলে ডাটাবেজে টেবিল এড হবে
+
+php artisan migrate:refresh 
+php artisan migrate:fresh // একবার ক্রিয়েট করা টেবিলের কোন fild চেঞ্জ করতে চাইলে fild চেঞ্জ করে তারপর এই কমেন্ট use করতে হবে
+
+
+                    </div>
+                  </div>
+                </div>
+                                    <!-- CRUD Multhiauth Start-->
+                <div class="tab-pane fade" id="pills-6" role="tabpanel" aria-labelledby="pills-6-tab" tabindex="0">
+                  <div class="code-heading">
+                   <p>Step 2: Database Configuration</p>
+                  </div>
+                  <p>
+                    দ্বিতীয় ধাপে, আমরা আমাদের লারাভেল 10 এর ক্রুড অ্যাপ্লিকেশনের জন্য ডাটাবেসের নাম, ব্যবহারকারীর নাম, 
+                    পাসওয়ার্ড ইত্যাদির জন্য ডাটাবেস কনফিগারেশন করব। তাই আসুন .env ফাইলটি খুলুন এবং নীচের মত সমস্ত বিবরণ পূরণ করুন:
+                  </p>
+                  <p style="font-size: 18px;"><strong>.env</strong></p>
+
+                  <div class="editor-container" style="height: 180px;">
+                  <div id="multhiauth">
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=here your database name(blog)
+DB_USERNAME=here database username(root)
+DB_PASSWORD=here database password(root)
+                    </div>
+                  </div>
+                </div>
+                                    <!-- CRUD Multhiauth End-->
+                
+                <div class="tab-pane fade" id="pills-7" role="tabpanel" aria-labelledby="pills-7-tab" tabindex="0">
+                  <p>
+                    এখানে আমরা একটি একটি ব্লক সাইডে CRUD অপারেশন সম্পন্ন করব যাতে একজন ইউজার ক্রিয়েট করতে পারবে আপডেট করতে পারবে ডিলিট করতে পারবে এবং রিড করতে পারবে
+                  </p>
+                </div>
+              </div>
+            </div>
+           </div>
+                                      <!-- ===CRUD With Image Part END=== -->
+
+                                      <!-- ===CRUD Without Image Part Start=== -->
+           <div class="tab-pane fade show" id="v-pills-part-12" role="tabpanel" aria-labelledby="v-pills-part-12-tab" tabindex="0"> 
+            <div class="crud-without-img">
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-01-tab" data-bs-toggle="pill" data-bs-target="#pills-01" type="button" role="tab" aria-controls="pills-01" aria-selected="false">Controller</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-02-tab" data-bs-toggle="pill" data-bs-target="#pills-02" type="button" role="tab" aria-controls="pills-02" aria-selected="false">Table</button>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-01" role="tabpanel" aria-labelledby="pills-01-tab" tabindex="0">
+                  <p style="font-size: 16px; margin: 0px;"><strong>app\Http\Controllers\Controller.php</strong></p>
+                  <div class="editor-container" style="height: 370px;">
+                    <div id="command01">
+use App\Models\IndexBlog;
+
+    public function create()
+    {
+        return view('backend.blog.create');
+    }
+
+    public function store(Request $request){
+        $all_data = new IndexBlog ;
+
+        $all_data ->title= $request->title;
+        
+        $all_data ->description= $request->description;
+
+        $all_data->save();
+        return redirect()->to('/all-blog');
+    }
+
+
+    public function all()
+    {
+       $all_data = IndexBlog::select('*')->orderBy('id', 'DESC')->get();
+        return view('backend.blog.all', compact('all_data'));
+    }
+
+    public function welcome()
+    {
+       $all_data = IndexBlog::select('*')->orderBy('id', 'DESC')->get();
+        return view('layouts.welcome', compact('all_data'));
+    }
+
+    public function delete($id)
+    {
+        $data = IndexBlog::find($id);
+        $data->delete();
+        return redirect()->back();
+    }
+
+    public function show($id)
+    {
+        $data = IndexBlog::find($id);
+        return view('backend.blog.single',compact('data'));
+    }
+
+    public function eidt($id)
+    {
+        $data = IndexBlog::find($id);
+        return view('backend.blog.eidt',compact('data'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $data = IndexBlog::find($id);
+
+        $data->title= $request->title;
+        $data->description= $request->description;
+        
+        $data->update();
+        return redirect()->to('/all-blog');
+
+    }
+
+              </div>
+                    </div>
+                </div>                       
+                <div class="tab-pane fade" id="pills-02" role="tabpanel" aria-labelledby="pills-02-tab" tabindex="0">
+                  <p style="font-size: 16px; margin: 0px;"><strong>database\migrations\2023_08_25_190306_create_index_blogs_table.php</strong></p>
+                    <div class="editor-container" style="height: 370px;">
+                      <div id="command02">
+?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('index_blogs', function (Blueprint $table) {
+            $table->id();//increment
+            $table->string('title',255)->nullable();
+            $table->text('description')->nullable();
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('index_blogs');
+    }
+};
+                      </div>
+                    </div>
+                </div>                
+              </div>
+            </div>
+           </div>
+                                      <!-- ===CRUD Without Image Part End=== -->
+
+          
+           <!-- <div class="tab-pane fade show" id="v-pills-part-5" role="tabpanel" aria-labelledby="v-pills-part-5-tab" tabindex="0"> 
+
+           </div> -->
+           
+         </div>
+      </div>
+    </div>
+<!--MAIN CONTENT END-->
+  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.5.3/ace.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
