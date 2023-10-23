@@ -3,7 +3,9 @@ body{
   line-height: 30px;
   cursor: pointer;
 }
-
+textarea{
+  width: 850px !important;
+}
 /* -----editor start----- */
 .editor-container{
   width: 900px;
@@ -24,7 +26,12 @@ body{
 #command5,
 #multhiauth,
 #command01,
-#command02{
+#command02,
+#command03,
+#command04,
+#command05,
+#command06,
+#command07{
   position: absolute;
   left: 0;
   right: 0;

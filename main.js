@@ -73,7 +73,7 @@ ace.edit(multhiauth, {
   theme: "ace/theme/cobalt",
   mode: "ace/mode/javascript",
 });
-// ===CRUD With Image Start===
+// ===CRUD With Image End===
 
 // ===CRUD Without Image Start===
 let command01 = document.querySelector("#command01");
@@ -88,4 +88,35 @@ ace.edit(command02, {
   theme: "ace/theme/cobalt",
   mode: "ace/mode/javascript",
 });
+let command03 = document.querySelector("#command03");
+
+ace.edit(command03, {
+  theme: "ace/theme/cobalt",
+  mode: "ace/mode/javascript",
+});
+let command04 = document.querySelector("#command04");
+
+ace.edit(command04, {
+  theme: "ace/theme/cobalt",
+  mode: "ace/mode/javascript",
+});
+let command05 = document.querySelector("#command05");
+
+ace.edit(command05, {
+  theme: "ace/theme/cobalt",
+  mode: "ace/mode/javascript",
+});
+let command06 = document.querySelector("#command06");
+
+ace.edit(command06, {
+  theme: "ace/theme/cobalt",
+  mode: "ace/mode/javascript",
+});
+let command07 = document.querySelector("#command07");
+
+ace.edit(command07, {
+  theme: "ace/theme/cobalt",
+  mode: "ace/mode/javascript",
+});
+
 // ===CRUD Without Image Start===

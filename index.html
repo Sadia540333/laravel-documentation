@@ -15,7 +15,6 @@
 
   <body>
 
-<!--HEADER START-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
       <div class="container-fluid">
         <!-- <img style="height: 50px; width: 50px;" class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkgsPLsUD7hHluJZxlMMc-V90m-O5qS3rdJw&usqp=CAU" alt=""> -->
@@ -51,6 +50,7 @@
              <!-- <li class="nav-link" id="v-pills-part-10-tab" data-bs-toggle="pill" data-bs-target="#v-pills-part-10" type="button" role="tab" aria-controls="v-pills-part-10" aria-selected="true">Laravel Request</li> -->
              <li class="nav-link" id="v-pills-part-11-tab" data-bs-toggle="pill" data-bs-target="#v-pills-part-11" type="button" role="tab" aria-controls="v-pills-part-11" aria-selected="true">CRUD With Image</li> 
              <li class="nav-link" id="v-pills-part-12-tab" data-bs-toggle="pill" data-bs-target="#v-pills-part-12" type="button" role="tab" aria-controls="v-pills-part-12" aria-selected="true">CRUD Without Image</li> 
+             <li class="nav-link" id="v-pills-part-13-tab" data-bs-toggle="pill" data-bs-target="#v-pills-part-13" type="button" role="tab" aria-controls="v-pills-part-13" aria-selected="true">Multhiauth</li> 
            </ul>
         </div>
                                 
@@ -95,9 +95,6 @@
                   <p>
                     ফ্রেমওয়ার্ক হচ্ছে আমাদের দ্বিতীয় অপশনটির মতোই, যেখানে ওয়েব ডেভেলপমেন্ট ,অ্যাপ্লিকেশান ডেভেলপমেন্ট এবং সফটওয়্যার ডেভেলপমেন্ট এর জন্য সব কিছু রেডি থাকে এবং আপনাকে শুধু এর ব্যবহার জানতে হবে। আর তাতে আপনার ওয়েব ডেভেলপমেন্ট ,অ্যাপ্লিকেশান ডেভেলপমেন্ট এবং সফটওয়্যার ডেভেলপমেন্ট তৈরীর সময় এবং খরচ দুটোই অনেক কমে যাবে। আবার অন্য ভাবে বলতে পারি ফ্রেমওয়ার্ক হচ্ছে রেডিমেড ক্লাস ও ইন্টারফেসের কালেকশন যার মাধ্যমে আমরা বিভিন্ন ধরনের ওয়েব ডেভেলপমেন্ট ,অ্যাপ্লিকেশান ডেভেলপমেন্ট এবং সফটওয়্যার ডেভেলপমেন্ট খুব সহজে এবং কম সময়ে করতে পারি।
                   </p>
-               
-
-              
            </div>
                                  <!-- Laravel Framework end? -->
 
@@ -419,7 +416,7 @@ Route::get('/', [HomeController::class, 'HomePage']);
             <div class="crud-with-img">
               <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1" aria-selected="false"> Route</button>
+                  <button class="nav-link active" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1" aria-selected="false">Route</button>
                 </li>
                 <li class="nav-item" role="presentation">
                   <button class="nav-link" id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2" aria-selected="false">Controller</button>
@@ -433,11 +430,14 @@ Route::get('/', [HomeController::class, 'HomePage']);
                 <li class="nav-item" role="presentation">
                   <button class="nav-link" id="pills-5-tab" data-bs-toggle="pill" data-bs-target="#pills-5" type="button" role="tab" aria-controls="pills-5" aria-selected="false">Command</button>
                 </li>
-                <li class="nav-item" role="presentation">
+                <!-- <li class="nav-item" role="presentation">
                   <button class="nav-link" id="pills-6-tab" data-bs-toggle="pill" data-bs-target="#pills-6" type="button" role="tab" aria-controls="pills-6" aria-selected="false">Multiauth</button>
-                </li>
+                </li> -->
                 <li class="nav-item" role="presentation">
                   <button class="nav-link" id="pills-7-tab" data-bs-toggle="pill" data-bs-target="#pills-7" type="button" role="tab" aria-controls="pills-7" aria-selected="false">Blog</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-8-tab" data-bs-toggle="pill" data-bs-target="#pills-8" type="button" role="tab" aria-controls="pills-8" aria-selected="false">View</button>
                 </li>
               </ul>
 
@@ -459,11 +459,14 @@ Route::get('/blog-eidt/{id}', [IndexBlogController::class, 'eidt']);
 Route::put('/blog-update/{id}', [IndexBlogController::class, 'update']);
 
 
-              </div>
-                    </div>
+                </div>
+                  </div>
                 </div>
                 <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab" tabindex="0">
                   <p style="font-size: 16px; margin: 0px;"><strong>app\Http\Controllers\Controller.php</strong></p>
+                  <div class="code">
+                    <strong>php artisan make:controller ProfileController</strong>
+                   </div>
                   <div class="editor-container" style="height: 370px;">
                     <div id="command2">
 use App\Models\IndexBlog;
@@ -554,6 +557,9 @@ use Illuminate\Support\Facades\File;           <!--image use korle ai command di
 
                 <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab" tabindex="0">
                   <p style="font-size: 16px; margin: 0px;"><strong>app\Models\IndexBlog.php</strong></p>
+                  <div class="code">
+                    <strong>php artisan make:model Profile</strong>
+                   </div>
                   <div class="editor-container" style="height: 370px;">
                     <div id="command3">
 ?php
@@ -573,6 +579,9 @@ class IndexBlog extends Model
 
                 <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab" tabindex="0">
                   <p style="font-size: 16px; margin: 0px;"><strong>database\migrations\2023_08_25_190306_create_index_blogs_table.php</strong></p>
+                  <div class="code">
+                    <strong>php artisan make:migration create_profiles_table</strong>
+                   </div>
                   <div class="editor-container" style="height: 400px;">
                     <div id="command4">
 
@@ -612,7 +621,6 @@ return new class extends Migration
                   </div>
                 </div>
                 <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab" tabindex="0">
-                  <p style="font-size: 16px; margin: 0px;"><strong></strong></p>
                   <div class="editor-container" style="height: 370px;">
                     <div id="command5">
 composer create-project laravel/laravel example-app
@@ -633,36 +641,289 @@ php artisan migrate:fresh // একবার ক্রিয়েট করা 
 
                     </div>
                   </div>
-                </div>
-                                    <!-- CRUD Multhiauth Start-->
-                <div class="tab-pane fade" id="pills-6" role="tabpanel" aria-labelledby="pills-6-tab" tabindex="0">
-                  <div class="code-heading">
-                   <p>Step 2: Database Configuration</p>
-                  </div>
-                  <p>
-                    দ্বিতীয় ধাপে, আমরা আমাদের লারাভেল 10 এর ক্রুড অ্যাপ্লিকেশনের জন্য ডাটাবেসের নাম, ব্যবহারকারীর নাম, 
-                    পাসওয়ার্ড ইত্যাদির জন্য ডাটাবেস কনফিগারেশন করব। তাই আসুন .env ফাইলটি খুলুন এবং নীচের মত সমস্ত বিবরণ পূরণ করুন:
-                  </p>
-                  <p style="font-size: 18px;"><strong>.env</strong></p>
-
-                  <div class="editor-container" style="height: 180px;">
-                  <div id="multhiauth">
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=here your database name(blog)
-DB_USERNAME=here database username(root)
-DB_PASSWORD=here database password(root)
-                    </div>
-                  </div>
-                </div>
-                                    <!-- CRUD Multhiauth End-->
+                </div>              
+                <!-- <div class="tab-pane fade" id="pills-6" role="tabpanel" aria-labelledby="pills-6-tab" tabindex="0">
                 
+                </div> -->
+                
+                                    <!-- blog start -->
                 <div class="tab-pane fade" id="pills-7" role="tabpanel" aria-labelledby="pills-7-tab" tabindex="0">
                   <p>
                     এখানে আমরা একটি একটি ব্লক সাইডে CRUD অপারেশন সম্পন্ন করব যাতে একজন ইউজার ক্রিয়েট করতে পারবে আপডেট করতে পারবে ডিলিট করতে পারবে এবং রিড করতে পারবে
                   </p>
                 </div>
+                                    <!-- blog start -->
+
+                              
+                                    <!-- all blade file with image start -->
+                <div class="tab-pane fade" id="pills-8" role="tabpanel" aria-labelledby="pills-8-tab" tabindex="0">
+                                      <!-- master blade start -->
+                 <div class="master-blade">
+                  <p style="font-size: 16px; margin: 0px;"><strong>resources\views\backend\blog\master.blade.php</strong></p>
+                  <textarea style="overflow-x: scroll;" class="form-control mb-4 p-2" id="" cols="30" rows="15">
+                    <!doctype html>
+                    <html lang="en">
+                      <head>
+                        <meta charset="utf-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
+                        <title>p2c Blog</title>
+                        <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2012/04/24/11/37/b-39503_1280.png" type="image/x-icon">
+                        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+                      </head>
+                      <body>
+                    @include('layouts.nav')
+                    
+                    @yield('content')
+                    
+                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+                      </body>
+                    </html>
+                  </textarea>
+                 </div>
+                                      <!-- master blade End -->
+
+                                      <!-- welcome blade start -->
+                 <div class="welcome-blade">
+                  <p style="font-size: 16px; margin: 0px;"><strong>resources\views\layouts\welcome.blade.php</strong></p>
+                  <textarea style="overflow-x: scroll;" class="form-control mb-4 p-2" id="" cols="30" rows="15">
+                    @extends('backend.blog.master')
+ 
+                    @section('content')
+                        <!-- Card-section start -->
+                        <section class="card-section">
+                                <div class="container">
+                                    <div class="row py-5">
+                                        @foreach($all_data as $data)
+                                        <div class="col-lg-4 col-md-6 p-3">
+                                            <div class="card" style="width: 100%;">
+                                                <img style="height:300px; width:100%;" class="img-fluid" src="{{asset('images/blog/'.$data->image)}}" class="d-block w-100" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">{{Str::limit($data->title,3)}}</h5>
+                                                    <p class="card-text">{{Str::limit($data->description,20)}}</p>
+                                                    <a href="{{url('/blog-single',$data->id)}}" class="btn btn-primary">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        @endforeach
+                                    </div>
+                                </div>
+                        </section>
+                        <!-- Card-section End -->
+                    @endsection
+                  </textarea>
+                 </div>
+                                      <!-- welcome blade End -->
+
+                                      <!-- create blade start -->
+                 <div class="create-blade">
+                  <p style="font-size: 16px; margin: 0px;"><strong>resources\views\layouts\create.blade.php</strong></p>
+                  <textarea style="overflow-x: scroll;" class="form-control mb-4 p-2" id="" cols="30" rows="15">
+                    @extends('backend.blog.master')
+
+                    @section('content')
+                        <!-- form Start -->
+                        <section class="form-section">
+                                <div class="container">
+                                    <div class="row justify-content-center py-4">
+                                        <div class="col-6">
+                                                <form class="row g-3 form-control py-4" action="{{url('/blog-store')}}" method="POST" enctype="multipart/form-data">
+                                                    @csrf
+                                                    <div class="col-12">
+                                                        <label for="inputEmail4" class="form-label">Title :</label>
+                                                        <input type="text" name="title" class="form-control" id="inputEmail4" required>
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <label for="inputEmail4" class="form-label">Image :</label>
+                                                        <input type="file" name="image" class="form-control" id="inputEmail4">
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <label for="inputEmail4" class="form-label">Description :</label>
+                                                      <textareaa name="description" id="" cols="30" rows="3" class="form-control"></textareaa>
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <button type="submit" class="btn btn-primary">Create</button>
+                                                    </div>
+                                                </form>
+                                        </div>
+                                    </div>
+                                </div>
+                        </section>
+                        <!-- form End -->
+                    @endsection
+                  </textarea>
+                 </div>
+                                      <!-- create blade End -->
+
+                                      <!-- all blade start -->
+                 <div class="all-blade">
+                  <p style="font-size: 16px; margin: 0px;"><strong>resources\views\backend\blog\all.blade.php</strong></p>
+                  <textarea style="overflow-x: scroll;" class="form-control mb-4 p-2" id="" cols="30" rows="15">
+                   
+                      @extends('backend.blog.master')
+
+                      @section('content')
+                        <!-- table Start -->
+                          <section class="table-section">
+                              <div class="container">
+                                  <div class="row justify-content-center">
+                                      <div class="col-12 py-3">
+                                          <table class="table table-striped table-hover">
+                                              <thead>
+                                                  <tr>
+                                                      <th scope="col">ID</th>
+                                                      <th scope="col">Title</th>
+                                                      <th scope="col">Image</th>
+                                                      <th scope="col">Description</th>
+                                                      <th scope="col">Action</th>
+                                                  </tr>
+                                              </thead>
+
+                                              <tbody class="table-group-divider">
+                                                  @foreach($all_data as $data)
+                                                  <tr>
+                                                      <th scope="row">
+                                                          {{$data->id}}
+                                                      </th>
+
+                                                      <td>
+                                                      {{Str::limit($data->title,3)}}
+                                                      </td>
+
+                                                      <td>
+                                                          <img style="height:50px; width:50px;" src="{{asset('images/blog/'.$data->image)}}" alt="Table-img"> <!-- 1:05:03 -->
+                                                      </td>
+                                                    
+                                                      <td>
+                                                      {{Str::limit($data->description,20)}}
+                                                      </td>
+                                                      <td>
+                                                          <a href="{{url('/blog-single',$data->id)}}" class="btn btn-primary">Show</a>
+                                                          <a href="{{url('/blog-eidt',$data->id)}}" class="btn btn-success">Edit</a>
+                                                          <a href="{{url('/blog-delete',$data->id)}}" class="btn btn-danger">Delete</a>
+                                                      </td>
+                                                  </tr>
+                                                  @endforeach
+                                              </tbody>
+                                          </table>
+                                      </div>
+                                  </div>
+                              </div>
+                          </section>
+                      <!-- table End -->
+                      @endsection
+                  </textarea>
+                 </div>
+                                      <!-- all blade End -->
+
+                                      <!-- edit blade start -->
+                 <div class="edit-blade">
+                  <p style="font-size: 16px; margin: 0px;"><strong>resources\views\backend\blog\eidt.blade.php</strong></p>
+                  <textarea style="overflow-x: scroll;" class="form-control mb-4 p-2" id="" cols="30" rows="15">
+                    @extends('backend.blog.master')
+
+                    @section('content')
+                         <!-- form Start -->
+                         <section class="form-section">
+                                <div class="container">
+                                    <div class="row justify-content-center py-4">
+                                        <div class="col-6">
+                                                <form class="row g-3 form-control py-4" action="{{url('/blog-update',$data->id)}}" method="POST" enctype="multipart/form-data">
+                                                    @csrf
+                                                    @method('PUT')
+                                                    <div class="col-12">
+                                                        <label for="inputEmail4" class="form-label">Title :</label>
+                                                        <input type="text" name="title"  value="{{$data->title}}" class="form-control" id="inputEmail4" required>
+                                                    </div>
+                    
+                                                    <div class="col-12">
+                                                        <label for="inputEmail4" class="form-label">Image :</label>
+                                                        <input type="file" name="image"  value="" class="form-control" id="inputEmail4">
+                                                        <img style="height:50px; width:50px;" src="{{asset('images/blog/'.$data->image)}}" alt="Table-img">
+                                                    </div>
+                    
+                                                    <div class="col-12">
+                                                        <label for="inputEmail4" class="form-label">Description :</label>
+                                                       <textareaa name="description" id="" cols="30" rows="3" class="form-control">{{$data->description}}</textareaa>
+                                                    </div>
+                    
+                                                    <div class="col-12">
+                                                        <button type="submit" class="btn btn-primary">Update</button>
+                                                    </div>
+                    
+                                                </form>
+                                        </div>
+                                    </div>
+                                </div>
+                        </section>
+                         <!-- form End -->
+                    @endsection
+                  </textarea>
+                 </div>
+                                      <!-- edit blade End -->
+
+                                      <!-- single blade start -->
+                 <div class="single-blade">
+                  <p style="font-size: 16px; margin: 0px;"><strong>resources\views\backend\blog\single.blade.php</strong></p>
+                  <textarea style="overflow-x: scroll;" class="form-control mb-4 p-2" id="" cols="30" rows="15">
+                    @extends('backend.blog.master')   
+
+                    @section('content')
+                        <div class="container py-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h1> {{$data->title}}</h1>
+                                    <img src="{{asset('images/blog/'.$data->image)}}" style="width:100%; height:70vh;" class="py-4" alt="">
+                                    <p style="text-align:justify;">{{$data->description}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    @endsection                    
+                  </textarea>
+                 </div>
+                                      <!-- single blade End -->
+
+                                      <!-- nav blade start -->
+                 <div class="nav-blade">
+                  <p style="font-size: 16px; margin: 0px;"><strong>resources\views\layouts\nav.blade.php</strong></p>
+                  <textarea style="overflow-x: scroll;" class="form-control mb-4 p-2" id="" cols="30" rows="15">
+                      <!-- Navbar Start -->
+                      <style>
+                        .navbar_section nav ul li .nav-link.active , nav ul .nav-link.show{
+                            color:red;
+                        }
+                    </style>
+                    <section class="navbar_section">
+                        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                            <div class="container">
+                                <img style="heigth:50px; width:50px;" class="img-fluid" src="https://cdn.pixabay.com/photo/2012/04/24/11/37/b-39503_1280.png" alt="logo">
+                                <a class="navbar-brand ps-4" href="{{url('/')}}">P2C Blog</a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                                    <li class="nav-item"><a class="nav-link {{'/'==request()->path()?'active':''}}" aria-current="page" href="{{url('/')}}">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link {{'create-blog'==request()->path()?'active':''}}" aria-current="page" href="{{url('/create-blog')}}">Create Blog</a></li>
+                                    <li class="nav-item"><a class="nav-link {{'all-blog'==request()->path()?'active':''}}" aria-current="page" href="{{url('/all-blog')}}">All Blog</a></li>
+                                </ul>
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                                </div>
+                            </div>
+                        </nav>
+                    </section>
+                    <!-- Navbar End -->
+                  </textarea>
+                 </div>
+                                      <!-- nav blade End -->
+
+                </div>
+                                    <!-- all blade file with image End -->
               </div>
             </div>
            </div>
@@ -673,18 +934,346 @@ DB_PASSWORD=here database password(root)
             <div class="crud-without-img">
               <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="pills-01-tab" data-bs-toggle="pill" data-bs-target="#pills-01" type="button" role="tab" aria-controls="pills-01" aria-selected="false">Controller</button>
+                  <button class="nav-link active" id="pills-01-tab" data-bs-toggle="pill" data-bs-target="#pills-01" type="button" role="tab" aria-controls="pills-01" aria-selected="false">Route</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-02-tab" data-bs-toggle="pill" data-bs-target="#pills-02" type="button" role="tab" aria-controls="pills-02" aria-selected="false">Table</button>
+                  <button class="nav-link" id="pills-02-tab" data-bs-toggle="pill" data-bs-target="#pills-02" type="button" role="tab" aria-controls="pills-02" aria-selected="false">Model</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-03-tab" data-bs-toggle="pill" data-bs-target="#pills-03" type="button" role="tab" aria-controls="pills-03" aria-selected="false">View</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-04-tab" data-bs-toggle="pill" data-bs-target="#pills-04" type="button" role="tab" aria-controls="pills-04" aria-selected="false">Controller</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-05-tab" data-bs-toggle="pill" data-bs-target="#pills-05" type="button" role="tab" aria-controls="pills-05" aria-selected="false">Table</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-06-tab" data-bs-toggle="pill" data-bs-target="#pills-06" type="button" role="tab" aria-controls="pills-06" aria-selected="false">Command</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-07-tab" data-bs-toggle="pill" data-bs-target="#pills-07" type="button" role="tab" aria-controls="pills-07" aria-selected="false">Blog</button>
                 </li>
               </ul>
 
               <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-01" role="tabpanel" aria-labelledby="pills-01-tab" tabindex="0">
-                  <p style="font-size: 16px; margin: 0px;"><strong>app\Http\Controllers\Controller.php</strong></p>
+                  <p style="font-size: 16px; margin: 0px;"><strong>routes\web.php</strong></p>
                   <div class="editor-container" style="height: 370px;">
                     <div id="command01">
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\IndexBlogController;
+
+Route::get('/', [IndexBlogController::class, 'welcome']);
+Route::get('/create-blog', [IndexBlogController::class, 'create']);
+Route::post('/blog-store', [IndexBlogController::class, 'store']);
+Route::get('/all-blog', [IndexBlogController::class, 'all']);
+Route::get('/blog-delete/{id}', [IndexBlogController::class, 'delete']);
+Route::get('/blog-single/{id}', [IndexBlogController::class, 'show']);
+Route::get('/blog-eidt/{id}', [IndexBlogController::class, 'eidt']);
+Route::put('/blog-update/{id}', [IndexBlogController::class, 'update']);
+
+
+                </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-02" role="tabpanel" aria-labelledby="pills-02-tab" tabindex="0">
+                  <p style="font-size: 16px; margin: 0px;"><strong>app\Models\IndexBlog.php</strong></p>
+                  <div class="code">
+                    <strong>php artisan make:model Profile</strong>
+                   </div>
+                  <div class="editor-container" style="height: 370px;">
+                    <div id="command02">
+?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class IndexBlog extends Model
+{
+    use HasFactory;
+}
+                    </div>
+                  </div>
+                </div> 
+                              <!-- all blade file without image start -->             
+                <div class="tab-pane fade" id="pills-03" role="tabpanel" aria-labelledby="pills-03-tab" tabindex="0">
+                                      <!-- master blade start -->
+                 <div class="master-blade">
+                  <p style="font-size: 16px; margin: 0px;"><strong>resources\views\backend\blog\master.blade.php</strong></p>
+                  <textarea style="overflow-x: scroll;" class="form-control mb-4 p-2" id="" cols="30" rows="15">
+                    <!doctype html>
+                    <html lang="en">
+                      <head>
+                        <meta charset="utf-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
+                        <title>p2c Blog</title>
+                        <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2012/04/24/11/37/b-39503_1280.png" type="image/x-icon">
+                        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+                      </head>
+                      <bodyy>
+                    @include('layouts.nav')
+                    
+                    @yield('content')
+                    
+                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+                      </bodyy>
+                    </html>
+                  </textarea>
+                 </div>
+                                      <!-- master blade End -->
+
+                                      <!-- welcome blade start -->
+                 <div class="welcome-blade">
+                  <p style="font-size: 16px; margin: 0px;"><strong>resources\views\layouts\welcome.blade.php</strong></p>
+                  <textarea style="overflow-x: scroll;" class="form-control mb-4 p-2" id="" cols="30" rows="15">
+                    @extends('backend.blog.master')
+ 
+                    @section('content')
+                        <!-- Card-section start -->
+                        <section class="card-section">
+                                <div class="container">
+                                    <div class="row py-5">
+                                        @foreach($all_data as $data)
+                                        <div class="col-lg-4 col-md-6 p-3">
+                                            <div class="card" style="width: 100%;">
+                                                <img style="height:300px; width:100%;" class="img-fluid" src="{{asset('images/blog/'.$data->image)}}" class="d-block w-100" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">{{Str::limit($data->title,3)}}</h5>
+                                                    <p class="card-text">{{Str::limit($data->description,20)}}</p>
+                                                    <a href="{{url('/blog-single',$data->id)}}" class="btn btn-primary">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        @endforeach
+                                    </div>
+                                </div>
+                        </section>
+                        <!-- Card-section End -->
+                    @endsection
+                  </textarea>
+                 </div>
+                                       <!-- welcome blade End -->
+
+                                      <!-- create blade start -->
+                 <div class="create-blade">
+                  <p style="font-size: 16px; margin: 0px;"><strong>resources\views\layouts\create.blade.php</strong></p>
+                  <textarea style="overflow-x: scroll;" class="form-control mb-4 p-2" id="" cols="30" rows="15">
+                    @extends('backend.blog.master')
+
+                    @section('content')
+                        <!-- form Start -->
+                        <section class="form-section">
+                                <div class="container">
+                                    <div class="row justify-content-center py-4">
+                                        <div class="col-6">
+                                                <form class="row g-3 form-control py-4" action="{{url('/blog-store')}}" method="POST" enctype="multipart/form-data">
+                                                    @csrf
+                                                    <div class="col-12">
+                                                        <label for="inputEmail4" class="form-label">Title :</label>
+                                                        <input type="text" name="title" class="form-control" id="inputEmail4" required>
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <label for="inputEmail4" class="form-label">Image :</label>
+                                                        <input type="file" name="image" class="form-control" id="inputEmail4">
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <label for="inputEmail4" class="form-label">Description :</label>
+                                                      <textareaa name="description" id="" cols="30" rows="3" class="form-control"></textareaa>
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <button type="submit" class="btn btn-primary">Create</button>
+                                                    </div>
+                                                </form>
+                                        </div>
+                                    </div>
+                                </div>
+                        </section>
+                        <!-- form End -->
+                    @endsection
+                  </textarea>
+                 </div>
+                                      <!-- create blade End -->
+
+                                      <!-- all blade start -->
+                 <div class="all-blade">
+                  <p style="font-size: 16px; margin: 0px;"><strong>resources\views\backend\blog\all.blade.php</strong></p>
+                  <textarea style="overflow-x: scroll;" class="form-control mb-4 p-2" id="" cols="30" rows="15">
+                   
+                      @extends('backend.blog.master')
+
+                      @section('content')
+                        <!-- table Start -->
+                          <section class="table-section">
+                              <div class="container">
+                                  <div class="row justify-content-center">
+                                      <div class="col-12 py-3">
+                                          <table class="table table-striped table-hover">
+                                              <thead>
+                                                  <tr>
+                                                      <th scope="col">ID</th>
+                                                      <th scope="col">Title</th>
+                                                      <th scope="col">Image</th>
+                                                      <th scope="col">Description</th>
+                                                      <th scope="col">Action</th>
+                                                  </tr>
+                                              </thead>
+
+                                              <tbody class="table-group-divider">
+                                                  @foreach($all_data as $data)
+                                                  <tr>
+                                                      <th scope="row">
+                                                          {{$data->id}}
+                                                      </th>
+
+                                                      <td>
+                                                      {{Str::limit($data->title,3)}}
+                                                      </td>
+
+                                                      <td>
+                                                          <img style="height:50px; width:50px;" src="{{asset('images/blog/'.$data->image)}}" alt="Table-img"> <!-- 1:05:03 -->
+                                                      </td>
+                                                    
+                                                      <td>
+                                                      {{Str::limit($data->description,20)}}
+                                                      </td>
+                                                      <td>
+                                                          <a href="{{url('/blog-single',$data->id)}}" class="btn btn-primary">Show</a>
+                                                          <a href="{{url('/blog-eidt',$data->id)}}" class="btn btn-success">Edit</a>
+                                                          <a href="{{url('/blog-delete',$data->id)}}" class="btn btn-danger">Delete</a>
+                                                      </td>
+                                                  </tr>
+                                                  @endforeach
+                                              </tbody>
+                                          </table>
+                                      </div>
+                                  </div>
+                              </div>
+                          </section>
+                      <!-- table End -->
+                      @endsection
+                  </textarea>
+                 </div>
+                                      <!-- all blade End -->
+
+                                      <!-- edit blade start -->
+                 <div class="edit-blade">
+                  <p style="font-size: 16px; margin: 0px;"><strong>resources\views\backend\blog\eidt.blade.php</strong></p>
+                  <textarea style="overflow-x: scroll;" class="form-control mb-4 p-2" id="" cols="30" rows="15">
+                    @extends('backend.blog.master')
+
+                    @section('content')
+                         <!-- form Start -->
+                         <section class="form-section">
+                                <div class="container">
+                                    <div class="row justify-content-center py-4">
+                                        <div class="col-6">
+                                                <form class="row g-3 form-control py-4" action="{{url('/blog-update',$data->id)}}" method="POST" enctype="multipart/form-data">
+                                                    @csrf
+                                                    @method('PUT')
+                                                    <div class="col-12">
+                                                        <label for="inputEmail4" class="form-label">Title :</label>
+                                                        <input type="text" name="title"  value="{{$data->title}}" class="form-control" id="inputEmail4" required>
+                                                    </div>
+                    
+                                                    <div class="col-12">
+                                                        <label for="inputEmail4" class="form-label">Image :</label>
+                                                        <input type="file" name="image"  value="" class="form-control" id="inputEmail4">
+                                                        <img style="height:50px; width:50px;" src="{{asset('images/blog/'.$data->image)}}" alt="Table-img">
+                                                    </div>
+                    
+                                                    <div class="col-12">
+                                                        <label for="inputEmail4" class="form-label">Description :</label>
+                                                       <textareaa name="description" id="" cols="30" rows="3" class="form-control">{{$data->description}}</textareaa>
+                                                    </div>
+                    
+                                                    <div class="col-12">
+                                                        <button type="submit" class="btn btn-primary">Update</button>
+                                                    </div>
+                    
+                                                </form>
+                                        </div>
+                                    </div>
+                                </div>
+                        </section>
+                         <!-- form End -->
+                    @endsection
+                  </textarea>
+                 </div>
+                                      <!-- edit blade End -->
+
+                                      <!-- single blade start -->
+                 <div class="single-blade">
+                  <p style="font-size: 16px; margin: 0px;"><strong>resources\views\backend\blog\single.blade.php</strong></p>
+                  <textarea style="overflow-x: scroll;" class="form-control mb-4 p-2" id="" cols="30" rows="15">
+                    @extends('backend.blog.master')   
+
+                    @section('content')
+                        <div class="container py-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h1> {{$data->title}}</h1>
+                                    <img src="{{asset('images/blog/'.$data->image)}}" style="width:100%; height:70vh;" class="py-4" alt="">
+                                    <p style="text-align:justify;">{{$data->description}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    @endsection                    
+                  </textarea>
+                 </div>
+                                      <!-- single blade End -->
+
+                                      <!-- nav blade start -->
+                 <div class="nav-blade">
+                  <p style="font-size: 16px; margin: 0px;"><strong>resources\views\layouts\nav.blade.php</strong></p>
+                  <textarea style="overflow-x: scroll;" class="form-control mb-4 p-2" id="" cols="30" rows="15">
+                      <!-- Navbar Start -->
+                      <style>
+                        .navbar_section nav ul li .nav-link.active , nav ul .nav-link.show{
+                            color:red;
+                        }
+                    </style>
+                    <section class="navbar_section">
+                        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                            <div class="container">
+                                <img style="heigth:50px; width:50px;" class="img-fluid" src="https://cdn.pixabay.com/photo/2012/04/24/11/37/b-39503_1280.png" alt="logo">
+                                <a class="navbar-brand ps-4" href="{{url('/')}}">P2C Blog</a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                                    <li class="nav-item"><a class="nav-link {{'/'==request()->path()?'active':''}}" aria-current="page" href="{{url('/')}}">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link {{'create-blog'==request()->path()?'active':''}}" aria-current="page" href="{{url('/create-blog')}}">Create Blog</a></li>
+                                    <li class="nav-item"><a class="nav-link {{'all-blog'==request()->path()?'active':''}}" aria-current="page" href="{{url('/all-blog')}}">All Blog</a></li>
+                                </ul>
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                                </div>
+                            </div>
+                        </nav>
+                    </section>
+                    <!-- Navbar End -->
+                  </textarea>
+                 </div>
+                                      <!-- nav blade End -->
+                 
+               
+                </div>  
+                               <!-- all blade file without image end -->  
+
+                <div class="tab-pane fade" id="pills-04" role="tabpanel" aria-labelledby="pills-04-tab" tabindex="0">
+                  <p style="font-size: 16px; margin: 0px;"><strong>app\Http\Controllers\Controller.php</strong></p>
+                  <div class="editor-container" style="height: 370px;">
+                    <div id="command04">
 use App\Models\IndexBlog;
 
     public function create()
@@ -748,12 +1337,12 @@ use App\Models\IndexBlog;
     }
 
               </div>
-                    </div>
-                </div>                       
-                <div class="tab-pane fade" id="pills-02" role="tabpanel" aria-labelledby="pills-02-tab" tabindex="0">
+                  </div>
+                </div>                
+                <div class="tab-pane fade" id="pills-05" role="tabpanel" aria-labelledby="pills-05-tab" tabindex="0">
                   <p style="font-size: 16px; margin: 0px;"><strong>database\migrations\2023_08_25_190306_create_index_blogs_table.php</strong></p>
-                    <div class="editor-container" style="height: 370px;">
-                      <div id="command02">
+                  <div class="editor-container" style="height: 370px;">
+                    <div id="command05">
 ?php
 
 use Illuminate\Database\Migrations\Migration;
@@ -762,36 +1351,86 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
-    public function up(): void
-    {
-        Schema::create('index_blogs', function (Blueprint $table) {
-            $table->id();//increment
-            $table->string('title',255)->nullable();
-            $table->text('description')->nullable();
-            $table->timestamps();
-        });
-    }
+  /**
+   * Run the migrations.
+   */
+  public function up(): void
+  {
+      Schema::create('index_blogs', function (Blueprint $table) {
+          $table->id();//increment
+          $table->string('title',255)->nullable();
+          $table->text('description')->nullable();
+          $table->timestamps();
+      });
+  }
 
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        Schema::dropIfExists('index_blogs');
-    }
+  /**
+   * Reverse the migrations.
+   */
+  public function down(): void
+  {
+      Schema::dropIfExists('index_blogs');
+  }
 };
-                      </div>
                     </div>
+                  </div>
+                </div>                
+                <div class="tab-pane fade" id="pills-06" role="tabpanel" aria-labelledby="pills-06-tab" tabindex="0">
+                  <div class="editor-container" style="height: 370px;">
+                    <div id="command06">
+composer create-project laravel/laravel example-app
+
+php artisan make:model Profile
+php artisan make:controller ProfileController
+php artisan make:migration create_profiles_table //migration is help to create model
+php artisan make:model Profile -mc   //এই কমান্ড এর মাধ্যমে মডেল টেবিল কন্ট্রোলার একসাথে ক্রিয়েট করা যাবে
+
+php artisan serve
+php artisan --version
+
+php arisan migrate    //টেবিল ক্রিয়েট করার পরেই মাইগ্রেট করতে হবে এরপর রিলোড করলে ডাটাবেজে টেবিল এড হবে
+
+php artisan migrate:refresh 
+php artisan migrate:fresh // একবার ক্রিয়েট করা টেবিলের কোন fild চেঞ্জ করতে চাইলে fild চেঞ্জ করে তারপর এই কমেন্ট use করতে হবে
+
+
+                    </div>
+                  </div>
+                </div>                
+                <div class="tab-pane fade" id="pills-07" role="tabpanel" aria-labelledby="pills-07-tab" tabindex="0">
+                  <p>
+                    এখানে আমরা একটি একটি ব্লক সাইডে CRUD অপারেশন সম্পন্ন করব যাতে একজন ইউজার ক্রিয়েট করতে পারবে আপডেট করতে পারবে ডিলিট করতে পারবে এবং রিড করতে পারবে
+                  </p>
                 </div>                
               </div>
             </div>
            </div>
                                       <!-- ===CRUD Without Image Part End=== -->
 
-          
+                                           <!-- Multhiauth Start-->
+           <div class="tab-pane fade show" id="v-pills-part-13" role="tabpanel" aria-labelledby="v-pills-part-13-tab" tabindex="0"> 
+            <div class="code-heading">
+              <p>Step 2: Database Configuration</p>
+             </div>
+             <p>
+               দ্বিতীয় ধাপে, আমরা আমাদের লারাভেল 10 এর ক্রুড অ্যাপ্লিকেশনের জন্য ডাটাবেসের নাম, ব্যবহারকারীর নাম, 
+               পাসওয়ার্ড ইত্যাদির জন্য ডাটাবেস কনফিগারেশন করব। তাই আসুন .env ফাইলটি খুলুন এবং নীচের মত সমস্ত বিবরণ পূরণ করুন:
+             </p>
+             <p style="font-size: 18px;"><strong>.env</strong></p>
+
+             <div class="editor-container" style="height: 180px;">
+             <div id="multhiauth">
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=here your database name(blog)
+DB_USERNAME=here database username(root)
+DB_PASSWORD=here database password(root)
+               </div>
+             </div>
+           </div>
+                                            <!-- Multhiauth End-->
+
            <!-- <div class="tab-pane fade show" id="v-pills-part-5" role="tabpanel" aria-labelledby="v-pills-part-5-tab" tabindex="0"> 
 
            </div> -->
